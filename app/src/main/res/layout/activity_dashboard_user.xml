@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard_user">
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/shape_toolbar1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:id="@+id/titre"
+            android:text="Tableau Utilisateur"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titre"
+            android:id="@+id/subTitre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="abc@gmail.com"
+            android:textColor="@color/black"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/logoutBtn"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addLinear"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/listBtn"
+            android:src="@drawable/affiche_image"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp" />
+        <ImageButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_image"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
